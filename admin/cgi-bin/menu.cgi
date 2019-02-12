@@ -12,11 +12,13 @@ echo "<html><head><meta charset=\"utf-8\">
 <meta http-equiv=\"Content-Style-Type\" content=\"text/css\" />
 <link rel=\"stylesheet\" href=\"./md.css\" type=\"text/css\" /><head><body>"
 echo "<table border=\"1\" width=\"100%\">
-	<tr><td colspan=\"2\"><a href=\"./menu.cgi\">返回<a>&nbsp;&nbsp;&nbsp<a href=\"../..\">首页</a>&nbsp;&nbsp;&nbsp系统版本:$sysname</td></tr>
-
 	<tr>
-		<td>▶防火墙设置</td>
-		<td rowspan=\"21\" width=\"80%\" valign=\"top\">"
+	<td width=\"20%\"><a href=\"./menu.cgi\">系统状态<a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../..\">首页</a></td>
+	<td width=\"80%\" >系统版本: $sysname</td>
+	</tr>
+	<tr>
+		<td>菜单</td>
+		<td rowspan=\"23\" width=\"80%\" valign=\"top\">"
 		
 		if [ "$form" = "" ]
 			then
@@ -27,6 +29,9 @@ echo "<table border=\"1\" width=\"100%\">
 	
 
 echo "</td>
+	</tr>
+	<tr>
+		<td>▶防火墙设置</td>
 	</tr>
 	<tr>
 		<td><a href=\"./menu.cgi?form=displayrules\">-规则查看</a></td>
@@ -88,7 +93,10 @@ echo "</td>
 	<tr>
 		<td><a href=\"./menu.cgi?form=ssh\">-SSH</a></td>
 	</tr>
-	<tr><td colspan=\"2\">页面加载于 $loadtime </td></tr>
+	<tr>
+		<td>页面生成时间</td>
+	</tr>
+	<tr><td colspan=\"2\">$loadtime </td></tr>
 </table>
 "
 	

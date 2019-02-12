@@ -25,7 +25,7 @@ IPV4|ipv4|IPv4)
 command="nat"
 ;;
 *)
-echo "Must specify IP protocol versiom"
+echo "Must specify IP protocol version"
 echo "</pre></body></html>"
 exit
 ;;
