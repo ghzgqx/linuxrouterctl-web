@@ -1,0 +1,57 @@
+<p>防火墙规则设置</p>
+<form name="firewall" action="./fw.cgi" method="get">
+<table>
+<tr>
+<td>协议</td>
+<td>
+<input type="radio" name="protocol" value="IPV4" checked>IPV4
+<input type="radio" name="protocol" value="IPV6">IPV6
+</td>
+</tr>
+<tr>
+<td>操作</td>
+<td>
+<input type="radio" name="type" value="A" checked>增加
+<input type="radio" name="type" value="D">删除
+<input type="radio" name="type" value="I">插入
+<input type="radio" name="type" value="R">替换
+<input type="radio" name="type" value="Custom">运行自定义规则
+</td>
+</tr>
+<tr>
+<td>表(自定义规则本行无效)</td>
+<td>
+<input type="radio" name="table" value="filter" checked>filter
+<input type="radio" name="table" value="nat">nat
+<input type="radio" name="table" value="raw">raw
+<input type="radio" name="table" value="mangle">mangle
+</td>
+</tr>
+</tr>
+<td>链(自定义规则本行无效)</td>
+<td>
+<input type="radio" name="chain" value="INPUT" checked>INPUT
+<input type="radio" name="chain" value="OUTPUT">OUTPUT
+<input type="radio" name="chain" value="FORWARD">FORWARD
+<input type="radio" name="chain" value="PREROUTING">PREROUTING
+<input type="radio" name="chain" value="POSTROUTING">POSTROUTING
+
+</td>
+</tr>
+<tr>
+<td>序号</td>
+<td>
+<input type="number" name="num" value="1"> <input type="checkbox" name="enablenum" value="1">启用本行
+</td>
+</tr>
+<tr>
+<td>规则</td>
+<td>
+<input type="text" name="rule">
+</td>
+</tr>
+</table>
+<input type="submit" value="提交">
+<input type="reset" value="重置">
+<p>非自定义规则模式：iptables -t [表] -[操作] [链] [行号(可选)] [规则]<br>自定义规则模式：iptables [规则]</p>
+</form>

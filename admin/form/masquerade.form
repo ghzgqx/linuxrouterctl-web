@@ -1,0 +1,39 @@
+<p>IP共享上网设置(MASQUERADE)</p>
+<form name="displayfirewall" action="./masq.cgi" method="get">
+<table>
+<tr>
+<td>IP协议版本</td>
+<td>
+<input type="radio" name="protocol" value="IPV4" checked>IPV4
+<input type="radio" name="protocol" value="IPV6">IPV6
+</td>
+</tr>
+<tr>
+<td>操作</td>
+<td>
+<input type="radio" name="type" value="add" required>增加
+<input type="radio" name="type" value="del" required>删除
+</td>
+</tr>
+<tr>
+
+<td>局域网地址段</td>
+<td>
+<input type="text" name="lan" required>
+</td>
+</tr>
+
+
+<tr>
+<td>WAN接口</td>
+<td>
+<input type="text" name="wanif" required>
+</td>
+</tr>
+
+
+</table>
+<input type="submit" value="提交">
+<input type="reset" value="重置">
+<p>地址段表示方法 IP地址/掩码长度<br>除IPv4/32和IPv6/128外，其他IP地址段末位必须为0<br><font color=red>本页面仅提供基础设置，高级设置请转到[防火墙设置]-[在线规则修改]</font></p>
+</form>

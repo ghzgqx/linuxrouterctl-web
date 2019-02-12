@@ -1,0 +1,20 @@
+<p>信息和日志查询</p>
+<form name="systemlog" action="./log-display.cgi" method="get">
+<table>
+<tr>
+<td>操作</td>
+<td>
+<input type="radio" name="type" value="log" checked>系统日志
+<input type="radio" name="type" value="ip">接口及IP
+<input type="radio" name="type" value="brd">网桥
+<input type="radio" name="type" value="inet4">IPV4路由表<br>
+<input type="radio" name="type" value="inet6">IPV6路由表
+<input type="radio" name="type" value="dhcp">DHCPv4分配记录
+<input type="radio" name="type" value="dhcp6">DHCPv6分配记录
+<input type="radio" name="type" value="radvd">RADVD日志
+</td>
+</tr>
+</table>
+<input type="submit" value="提交">
+<input type="reset" value="重置">
+</form>

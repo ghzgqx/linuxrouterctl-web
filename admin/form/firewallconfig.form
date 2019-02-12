@@ -1,0 +1,22 @@
+<p>防火墙配置文件</p>
+<form name="firewallconfig" action="./fw-control.cgi" method="get">
+<table>
+<tr>
+<td>协议</td>
+<td>
+<input type="radio" name="type" value="IPV4" checked>IPV4
+<input type="radio" name="type" value="IPV6">IPV6
+</td>
+</tr>
+<tr>
+<td>操作</td>
+<td>
+<input type="radio" name="do" value="display" checked>查看
+<input type="radio" name="do" value="save">保存当前运行规则
+<input type="radio" name="do" value="reload">加载配置文件规则
+</td>
+</tr>
+</table>
+<input type="submit" value="提交">
+<input type="reset" value="重置">
+</form>

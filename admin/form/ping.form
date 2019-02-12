@@ -1,0 +1,26 @@
+<p>网络测试-PING</p>
+<p><font color=red>!!!IPV6模式下，必须填写完整地址，禁止双冒号省略，否则不予处理!!!</font></p>
+<form name="ping" action="./ping.cgi" method="get">
+<table>
+<tr>
+<td>域名</td>
+<td><input type="text" name="domain" ></td>
+</tr>
+<tr>
+<td>次数</td>
+<td><input type="number" name="t" min="1" max="10" value="5">(1-10)</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>
+<input type="radio" name="type" value="IPV4" checked>IPV4
+<input type="radio" name="type" value="IPV6">IPV6
+</td>
+</tr>
+</tr>
+</form> 
+</table>
+<input type="submit" value="提交">
+<input type="reset" value="重置">
+</form>
+

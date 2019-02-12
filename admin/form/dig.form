@@ -1,0 +1,19 @@
+<p>网络测试-DNS检查</p>
+<form name="checkdns" action="./dig.cgi" method="get">
+<table>
+<tr>
+<td>域名</td>
+<td><input type="text" name="domain" ></td>
+</tr>
+<tr>
+<td>类型</td>
+<td><input type="text" name="type" value="A"></td>
+</tr>
+<tr>
+<td>DNS服务器</td>
+<td><input type="text"  name="dns" value="" required></td>
+</tr>
+</table>
+<input type="submit" value="提交">
+<input type="reset" value="重置">
+</form>

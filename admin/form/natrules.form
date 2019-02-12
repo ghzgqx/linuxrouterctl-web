@@ -1,0 +1,20 @@
+<p>NAT规则查看</p>
+<form name="displayrules" action="./fw-display.cgi" method="get">
+<table>
+<tr>
+<td>协议</td>
+<td>
+<input type="radio" name="type" value="IPV4" checked>IPV4
+<input type="radio" name="type" value="IPV6">IPV6
+</td>
+</tr>
+<tr>
+<td>表</td>
+<td>
+<input type="radio" name="table" value="nat" checked>nat
+</td>
+</tr>
+</table>
+<input type="submit" value="提交">
+<input type="reset" value="重置">
+</form> 

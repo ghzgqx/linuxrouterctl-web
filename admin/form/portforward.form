@@ -1,0 +1,56 @@
+<p>端口映射设置</p>
+<form name="portforward" action="./portforward.cgi" method="get">
+<table>
+<tr>
+<td>IP协议版本</td>
+<td>
+<input type="radio" name="protocol" value="IPV4" checked>IPV4
+<input type="radio" name="protocol" value="IPV6">IPV6
+</td>
+</tr>
+<tr>
+<td>操作</td>
+<td>
+<input type="radio" name="type" value="add" required>增加
+<input type="radio" name="type" value="del" required>删除
+</td>
+</tr>
+<tr>
+<td>协议</td>
+<td>
+<input type="radio" name="protocol4" value="tcp" required>TCP
+<input type="radio" name="protocol4" value="udp" required>UDP
+</td>
+</tr>
+
+
+<td>局域网IP</td>
+<td>
+<input type="text" name="lanip" required>
+</td>
+</tr>
+
+<td>局域网端口或端口段</td>
+<td>
+<input type="text" name="lanport" required>
+</td>
+</tr>
+
+<tr>
+<td>WAN接口</td>
+<td>
+<input type="text" name="wanif" required>
+</td>
+</tr>
+
+<td>互联网端口或端口段</td>
+<td>
+<input type="text" name="wanport" required>
+</td>
+</tr>
+
+</table>
+<input type="submit" value="提交">
+<input type="reset" value="重置">
+<p>端口段表示方法 起始端口:结束端口</p>
+</form>
