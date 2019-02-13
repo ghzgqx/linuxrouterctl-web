@@ -12,7 +12,7 @@ diskinfo=`df -h`
 nicname=`ls /sys/class/net`
 localipv4=`ip addr|grep inet|grep -v inet6|awk '{print $2}'|grep -E -v  "^(127.0.0.1)"|sed 's/$/<br>/'`
 localipv6=`ip addr|grep inet6|awk '{print $2}'|grep -E -v  "^(::1/128)"|sed 's/$/<br>/'`
-
+session=`sudo cat /proc/net/nf_conntrack |wc -l`
  echo "<p>状态</p>"
 echo "<table>
 <tr>
@@ -41,7 +41,12 @@ $sysname
 $kernel
 </td>
 </tr>
-
+<tr>
+<td>活动连接数</td>
+<td>
+$session
+</td>
+</tr>
 <tr>
 <td>内存</td>
 <td>

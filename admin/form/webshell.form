@@ -1,0 +1,22 @@
+<p>Web Shell</p>
+<h3>禁用/启用 Web Shell</h3>
+<form name="webshell" action="./webshell.cgi" method="get">
+<table>
+<td>操作</td>
+<td>
+<input type="radio" name="do" value="disable" required>禁用
+<input type="radio" name="do" value="enable"required>启用
+</td>
+</tr>
+</table>
+<input type="submit" value="提交">
+<input type="reset" value="重置">
+</form> 
+
+<h3>启动Web Shell</h3>
+<a href="./a9e019e247226249ddae4694d8f8f2d7b456caba/a9e019e247226249ddae4694d8f8f2d7b456caba.cgi"><button>打开</button></a>
+<h3>多行文本提交工具</h3>
+<a href="./a9e019e247226249ddae4694d8f8f2d7b456caba/dbbeb80e261215c00c9bb69b1dd745ce45fae4e2.cgi"><button>打开</button></a>
+<h3>文本文件上传工具</h3>
+<a href="./a9e019e247226249ddae4694d8f8f2d7b456caba/5cd87adc572d99acb516bedeca52f65b5b5d4246.cgi"><button>打开</button></a>
+<p>保存路径 同目录下temp.txt</p>

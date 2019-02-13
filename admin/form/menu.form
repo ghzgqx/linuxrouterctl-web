@@ -20,4 +20,6 @@
 <tr><td><a href="./menu.cgi?form=dig">-DNS</a></td></tr>
 <tr><td>▶命令行和高级设置</td></tr>
 <tr><td><a href="./menu.cgi?form=ssh">-SSH</a></td></tr>
+<tr><td><a href="./menu.cgi?form=webshell">-Web Shell/文件上传</a></td></tr>
+<tr><td><a href="./menu.cgi?form=confdownload">-配置文件下载</a></td></tr>
 <!-- 本行勿删 表格结束 一行一格 空行自动识别 同格禁止分行 -->

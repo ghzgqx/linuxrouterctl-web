@@ -1,0 +1,17 @@
+<p>服务状态查询</p>
+<form name="confdownload" action="./conf-download.cgi" method="get">
+<table>
+<tr>
+<td>服务</td>
+<td>
+<input type="radio" name="service" value="fw" required>iptables<br>
+<input type="radio" name="service" value="fw6" required>ip6tables<br>
+<input type="radio" name="service" value="dhcp" required>dhcpd<br>
+<input type="radio" name="service" value="dnsmasq" required>dnsmasq<br>
+<input type="radio" name="service" value="radvd" required>radvd<br>
+</td>
+</tr>
+</table>
+<input type="submit" value="提交">
+<input type="reset" value="重置">
+</form> 
