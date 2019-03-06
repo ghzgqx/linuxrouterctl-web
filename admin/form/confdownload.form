@@ -1,4 +1,4 @@
-<p>服务状态查询</p>
+<p>配置文件下载</p>
 <form name="confdownload" action="./conf-download.cgi" method="get">
 <table>
 <tr>

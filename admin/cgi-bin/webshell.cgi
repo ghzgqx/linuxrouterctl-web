@@ -7,16 +7,16 @@ do=`echo "$query" |grep -E -o "do=[^&]{1,}&"| sed  's/\(.\)\{1\}$//'|cut -c4-| g
 echo "<html><head><meta charset=\"utf-8\">
 <meta http-equiv=\"Content-Style-Type\" content=\"text/css\" />
 <link rel=\"stylesheet\" href=\"./md.css\" type=\"text/css\" /><head><body><h2>Web Shell</h2><pre>"
-cd a9e019e247226249ddae4694d8f8f2d7b456caba
+cd tools
 case "$do" in
 enable)
 echo "Enable web shell"
-echo "cat ./enablewebshell.form > ./a9e019e247226249ddae4694d8f8f2d7b456caba.cgi" |sudo bash
+echo "cat ./enablewebshell.form > ./webshell.cgi" |sudo bash
 echo "已启用 返回上一页并点击按钮打开Web Shell"
 ;;
 disable)
 echo "Disable web shell"
-echo "sudo cat ./disablewebshell.form > ./a9e019e247226249ddae4694d8f8f2d7b456caba.cgi" |sudo bash 
+echo "sudo cat ./disablewebshell.form > ./webshell.cgi" |sudo bash 
 echo "已禁用"
 ;;
 *)

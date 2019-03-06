@@ -7,7 +7,7 @@ query=`echo "$query" | ./query_getenv_decode.sh text`
 echo "<html><head><meta charset=\"utf-8\">
 <meta http-equiv=\"Content-Style-Type\" content=\"text/css\" />
 <link rel=\"stylesheet\" href=\"./md.css\" type=\"text/css\" /><head><body><h2>文本文件提交工具</h2>
-<form name=\"webshell\" action=\"./dbbeb80e261215c00c9bb69b1dd745ce45fae4e2.cgi\" method=\"post\">
+<form name=\"webshell\" action=\"./submittxt.cgi\" method=\"post\">
 <table border=\"1\" width=\"100%\">
 
 <tr>
@@ -16,15 +16,15 @@ echo "<html><head><meta charset=\"utf-8\">
 <textarea name=\"text\"  rows=\"5\" style=\"width:100%; height:100%; word-break: break-all;\">
 </textarea>
 </td>
-</tr>
+</tr> 
 </table>
 <input type=\"submit\" value=\"提交\">
 <input type=\"reset\" value=\"重置\">"
 
 
-echo "</pre>输出 </p><pre>"
-CONTENT_LENGTH=$(($CONTENT_LENGTH-5))
-if [ "$CONTENT_LENGTH" = "0" ]
+echo "</pre>输出 </p><pre>" 
+
+if [[ $CONTENT_LENGTH -lt 1  ]]
 then
 echo "ERROR:  CONTENT_LENGTH =  $CONTENT_LENGTH"
 else

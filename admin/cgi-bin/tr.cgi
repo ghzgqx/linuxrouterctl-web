@@ -7,6 +7,6 @@ domain=`echo "$query" |grep -E -o "domain=[^&]{1,}&"| sed  's/\(.\)\{1\}$//'|cut
 t=`echo "$query" |grep -E -o "t=[^&]{1,}&"| sed  's/\(.\)\{1\}$//'|cut -c3-| grep -E -o "[1-5]{1}"|head -1`
  echo "<html><head><meta charset=\"utf-8\">
 <meta http-equiv=\"Content-Style-Type\" content=\"text/css\" />
-<link rel=\"stylesheet\" href=\"./md.css\" type=\"text/css\" /><head><body><h2>traceroute</h2><pre>"
+<link rel=\"stylesheet\" href=\"./md.css\" type=\"text/css\" /><title>traceroute</title><head><body><h2>traceroute</h2><pre>"
 besttrace -q $t -g en $domain
 echo "</pre></body></html>"

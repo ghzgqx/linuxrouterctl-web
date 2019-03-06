@@ -6,6 +6,7 @@
 <td>
 <input type="radio" name="type" value="log" checked>系统日志
 <input type="radio" name="type" value="ip">接口及IP
+<input type="radio" name="type" value="conntrack">活动连接
 <input type="radio" name="type" value="brd">网桥
 <input type="radio" name="type" value="inet4">IPV4路由表<br>
 <input type="radio" name="type" value="inet6">IPV6路由表

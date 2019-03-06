@@ -17,9 +17,13 @@
  
  使用本程序需要给apache授权免密码sudo 对此产生的安全问题概不负责 尽量不要与其他网站一起混着跑
 
- admin/cgi-bin/a9e019e247226249ddae4694d8f8f2d7b456caba 文件夹内为测试功能 安全问题不保证 非必须环境下建议删除
+ admin/cgi-bin/tools 文件夹内为webshell等测试功能 安全问题不保证 非必须环境下建议删除
 
  使用这些测试功能时 必须注意安全 请勿用于执行rm等危险操作
+
+ 部分功能需要依赖https://github.com/ghzgqx/linuxrouterctl的nat和nat6两个脚本
+ 
+ 程序自身没有授权管理 建议使用SSL+服务器自带的htpasswd
  
  # 关于
 admin@ghzgqx.com 

@@ -7,7 +7,22 @@ query=`echo "$query" | ./query_getenv_decode.sh rule`
  echo "<html><head><meta charset=\"utf-8\">
 <meta http-equiv=\"Content-Style-Type\" content=\"text/css\" />
 <link rel=\"stylesheet\" href=\"./md.css\" type=\"text/css\" /><head><body><h2>Web shell</h2>
-<form name=\"webshell\" action=\"./a9e019e247226249ddae4694d8f8f2d7b456caba.cgi\" method=\"post\">
+<script type=\"text/javascript\">
+	function addUrl() {
+		var state = {
+			title: \"title\",
+			url: \"#\"
+		};
+		window.history.pushState(state, \"title\", \"#\");
+	}
+	
+	addUrl();addUrl();addUrl();addUrl();
+
+	window.addEventListener(\"popstate\", function(e) {
+		window.location.href = \"../menu.cgi\";
+	}, false);
+</script>
+<form name=\"webshell\" action=\"./webshell.cgi\" method=\"post\">
 <table border=\"1\" width=\"100%\">
 
 <tr>
@@ -25,5 +40,6 @@ echo "\$ $query"
 
 
 echo "</pre><p>输出</p><pre>"
-echo "$query" |bash
+echo "echo \"$query\" >> ./.webshell.log" |bash 
+echo "$query" |bash 2>&1
 echo "</pre></body></html>"

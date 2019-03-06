@@ -11,7 +11,7 @@
 </tr>
 <tr>
 <td>DNS服务器</td>
-<td><input type="text"  name="dns" value="" required></td>
+<td><input type="text"  name="dns" value=""></td>
 </tr>
 </table>
 <input type="submit" value="提交">

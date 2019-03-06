@@ -9,10 +9,14 @@ memfree=`cat /proc/meminfo |grep MemFree |cut -c9-|sed 's/^[ \t]*//g'`
 sysname=`cat /etc/os-release |grep -E "^PRETTY_NAME=[[:graph:] ]{1,}"|cut -c13-|sed "s/\"//g"`
 kernel=`uname -r -p`
 diskinfo=`df -h`
-nicname=`ls /sys/class/net`
 localipv4=`ip addr|grep inet|grep -v inet6|awk '{print $2}'|grep -E -v  "^(127.0.0.1)"|sed 's/$/<br>/'`
 localipv6=`ip addr|grep inet6|awk '{print $2}'|grep -E -v  "^(::1/128)"|sed 's/$/<br>/'`
+traffic=`sudo  cat /proc/net/dev | grep -v "|" | awk '{split($1,b,":");print "<tr><td>"b[1]"</td><td>"$2"</td><td>"$10"</td></tr>" }'`
 session=`sudo cat /proc/net/nf_conntrack |wc -l`
+conntrackmax=`sysctl -n net.netfilter.nf_conntrack_max`
+ipfwd=`sysctl -n net.ipv4.ip_forward`
+ip6fwd=`sysctl -n net.ipv6.conf.all.forwarding`
+pct=`printf '%06d' $((($session*100000)/$conntrackmax))`
  echo "<p>状态</p>"
 echo "<table>
 <tr>
@@ -41,10 +45,17 @@ $sysname
 $kernel
 </td>
 </tr>
+
+<tr>
+<td>全局IP转发</td>
+<td>
+IPv4 $ipfwd IPv6 $ip6fwd
+</td>
+</tr>
 <tr>
 <td>活动连接数</td>
 <td>
-$session
+当前 $session 上限 $conntrackmax &nbsp;&nbsp;&nbsp;&nbsp;${pct:0:3}.${pct:3}%
 </td>
 </tr>
 <tr>
@@ -66,9 +77,12 @@ $uptime
 </td>
 </tr>
 <tr>
-<td>网卡</td>
+<td>接口/流量</td>
 <td>
-$nicname
+<table>
+<tr><th>Interface</th><th>RX(Byte)</th><th>TX(Byte)</th></tr>
+$traffic
+</table>
 </td>
 </tr>
 <tr>

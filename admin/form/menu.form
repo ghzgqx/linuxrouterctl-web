@@ -1,25 +1,25 @@
 <!-- 本行勿删 表格开始 一行一格 空行自动识别 同格禁止分行 -->
-<tr><td>▶防火墙设置</td></tr>
-<tr><td><a href="./menu.cgi?form=displayrules">-规则查看</a></td></tr>
-<tr><td><a href="./menu.cgi?form=firewallconfig">-配置文件</a></td></tr>
-<tr><td><a href="./menu.cgi?form=firewall">-在线规则修改</a></td></tr>
-<tr><td>▶NAT</td></tr>
-<tr><td><a href="./menu.cgi?form=natrules">-运行规则查看</a></td></tr>
-<tr><td><a href="./menu.cgi?form=portforward">-端口映射</a></td></tr>
-<tr><td><a href="./menu.cgi?form=masquerade">-IP共享设置</a></td></tr>
-<tr><td>▶网络设置</td></tr>
-<tr><td><a href="./menu.cgi?form=networkmanager">-接口/IP/路由表设置</a></td></tr>
-<tr><td>▶系统服务</td></tr>
-<tr><td><a href="./menu.cgi?form=servicestatus">-服务状态查询</a></td></tr>
-<tr><td><a href="./menu.cgi?form=servicerestart">-服务重启</a></td></tr>
-<tr><td>▶系统日志</td></tr>
-<tr><td><a href="./menu.cgi?form=systemlog">-信息和日志查询</a></td></tr>
-<tr><td>▶网络测试</td></tr><tr>
-<td><a href="./menu.cgi?form=ping">-PING</a></td>
-</tr><tr><td><a href="./menu.cgi?form=traceroute">-路由跟踪</a></td></tr>
-<tr><td><a href="./menu.cgi?form=dig">-DNS</a></td></tr>
-<tr><td>▶命令行和高级设置</td></tr>
-<tr><td><a href="./menu.cgi?form=ssh">-SSH</a></td></tr>
-<tr><td><a href="./menu.cgi?form=webshell">-Web Shell/文件上传</a></td></tr>
-<tr><td><a href="./menu.cgi?form=confdownload">-配置文件下载</a></td></tr>
+<tr><td bgcolor="#88CCFF">防火墙设置</td></tr>
+<tr><td bgcolor="#F0F0F0"><a href="./menu.cgi?form=displayrules" style="text-decoration:none;">规则查看</a></td></tr>
+<tr><td bgcolor="#F0F0F0"><a href="./menu.cgi?form=firewallconfig" style="text-decoration:none;">配置文件</a></td></tr>
+<tr><td bgcolor="#F0F0F0"><a href="./menu.cgi?form=firewall" style="text-decoration:none;">在线规则修改</a></td></tr>
+<tr><td bgcolor="#88CCFF">NAT</td></tr>
+<tr><td bgcolor="#F0F0F0"><a href="./menu.cgi?form=natrules" style="text-decoration:none;">运行规则查看</a></td></tr>
+<tr><td bgcolor="#F0F0F0"><a href="./menu.cgi?form=portforward" style="text-decoration:none;">端口映射</a></td></tr>
+<tr><td bgcolor="#F0F0F0"><a href="./menu.cgi?form=masquerade" style="text-decoration:none;">IP共享设置</a></td></tr>
+<tr><td bgcolor="#88CCFF" style="text-decoration:none;">网络设置</td></tr>
+<tr><td bgcolor="#F0F0F0"><a href="./menu.cgi?form=networkmanager" style="text-decoration:none;">接口/IP/路由表设置</a></td></tr>
+<tr><td bgcolor="#88CCFF" style="text-decoration:none;">系统服务</td></tr>
+<tr><td bgcolor="#F0F0F0"><a href="./menu.cgi?form=servicestatus" style="text-decoration:none;">服务状态查询</a></td></tr>
+<tr><td bgcolor="#F0F0F0"><a href="./menu.cgi?form=servicerestart" style="text-decoration:none;">服务重启</a></td></tr>
+<tr><td bgcolor="#88CCFF">系统日志</td></tr>
+<tr><td bgcolor="#F0F0F0"><a href="./menu.cgi?form=systemlog" style="text-decoration:none;">信息和日志查询</a></td></tr>
+<tr><td bgcolor="#88CCFF">网络测试</td></tr><tr>
+<td bgcolor="#F0F0F0"><a href="./menu.cgi?form=ping" style="text-decoration:none;">PING</a></td>
+</tr><tr><td bgcolor="#F0F0F0"><a href="./menu.cgi?form=traceroute"style="text-decoration:none;">路由跟踪</a></td></tr>
+<tr><td bgcolor="#F0F0F0"><a href="./menu.cgi?form=dig" style="text-decoration:none;">DNS查询</a></td></tr>
+<tr><td bgcolor="#88CCFF">命令行和高级设置</td></tr>
+<tr><td bgcolor="#F0F0F0"><a href="./menu.cgi?form=ssh" style="text-decoration:none;">SSH</a></td></tr>
+<tr><td bgcolor="#F0F0F0"><a href="./menu.cgi?form=webshell" style="text-decoration:none;">Web Shell/其他工具</a></td></tr>
+<tr><td bgcolor="#F0F0F0"><a href="./menu.cgi?form=confdownload" style="text-decoration:none;">配置文件下载</a></td></tr>
 <!-- 本行勿删 表格结束 一行一格 空行自动识别 同格禁止分行 -->

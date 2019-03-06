@@ -14,9 +14,11 @@
 </form> 
 
 <h3>启动Web Shell</h3>
-<a href="./a9e019e247226249ddae4694d8f8f2d7b456caba/a9e019e247226249ddae4694d8f8f2d7b456caba.cgi"><button>打开</button></a>
+<a href="./tools/webshell.cgi"><button>打开</button></a>
 <h3>多行文本提交工具</h3>
-<a href="./a9e019e247226249ddae4694d8f8f2d7b456caba/dbbeb80e261215c00c9bb69b1dd745ce45fae4e2.cgi"><button>打开</button></a>
+<a href="./tools/submittxt.cgi"><button>打开</button></a>
 <h3>文本文件上传工具</h3>
-<a href="./a9e019e247226249ddae4694d8f8f2d7b456caba/5cd87adc572d99acb516bedeca52f65b5b5d4246.cgi"><button>打开</button></a>
+<a href="./tools/uploadtxt.cgi"><button>打开</button></a>
 <p>保存路径 同目录下temp.txt</p>
+<h3>BPF编译工具</p>
+<a href="./tools/bpfasm.cgi"><button>打开</button></a>
